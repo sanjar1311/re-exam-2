@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/") format("woff2"),
+      url("../fonts/subset-FuturaPT-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT Book";
+  src: url("../fonts/subset-FuturaPT-Book.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Futura PT";
+  src: url("../fonts/subset-FuturaPT-Bold.woff2") format("woff2"),
+      url("../fonts/subset-FuturaPT-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,11 +40,12 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Futura PT", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #F9F8F8;
   color: #222;
+  background-image: url("../img/bg.png");
 }
 
 img {
@@ -36,7 +65,7 @@ img {
 }
 
 .container {
-  max-width: 1280px;
+  max-width: 1350px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -44,7 +73,200 @@ img {
   /* box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1); */
 }
 
+.site-header {
+  position: relative;
+}
 
+.site-logo {
+  position: absolute;
+  top: 21px;
+  left: calc(50% - 720px);
+}
+
+.site-header__header-top {
+  background-color: #F9F8F8;
+}
+
+.header-top {
+  display: flex;
+  padding: 8px 0;
+}
+
+.address {
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  color: #333;
+  font-size: 14px;
+  margin-left: 150px;
+}
+
+.address::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 13px;
+  background-image: url("../img/home-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 9px;
+}
+
+.tel {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tel::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-image: url("../img/tel-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 9px;
+}
+
+.tel__phone {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.tel__phone:hover {
+  color: #FFBD54;
+}
+
+.tel__phone:active {
+  color: #333;
+  opacity: 0.6;
+}
+
+.tel-1::after,
+.tel-2::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #FFBD54;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.time {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  font-size: 14px;
+  color: #333;
+  margin-left: auto;
+}
+
+.time__work {
+  margin-right: 15px;
+}
+
+.time__work,
+.time__weekend{
+  white-space: nowrap;
+}
+
+.site-header__header-bottom {
+  background-color: #fff;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.site-navbar {
+  margin-left: 200px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  white-space: nowrap;
+  margin: 0 30px;
+}
+
+.nav-link:hover::after {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: gold;
+}
+
+.active::before{
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/active.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: -15px;
+}
+
+.quession {
+margin-left: auto;
+display: flex;
+align-items: center;
+text-decoration: none;
+color: #333;
+font-size: 14px;
+}
+
+.quession::before {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 20px;
+  background-image: url("../img/pet.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-right: 9px;
+}
+
+      /* MAIN */
+
+.main {
+  background-color: #F9F8F8;
+}
 
 
 @media

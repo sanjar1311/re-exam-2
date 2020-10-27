@@ -307,13 +307,17 @@ font-size: 14px;
   margin: 0;
   padding: 29px 0 38px 0;
 }
-.hero-link {
+.universial-btn {
+  background-color: transparent;
   background-color: #333;
   color: #fff;
   padding: 15px 45px;
   text-decoration: none;
   border-radius: 3px;
+}
+.hero-link{
   margin-bottom: 100px;
+
 }
 .hero-link:hover {
   color: #333;
@@ -459,7 +463,7 @@ font-size: 14px;
 }
 
 .left {
-  top: 60%;
+  top: 15%;
   left: calc(50% - 690px);
   width: 50px;
   height: 50px;
@@ -470,7 +474,7 @@ font-size: 14px;
 }
 
 .right {
-  top: 60%;
+  top: 15%;
   left: calc(50% + 630px);
   width: 50px;
   height: 50px;
@@ -498,6 +502,33 @@ font-size: 14px;
 
 .osmotr__right {
   margin-left: 50px;
+  color: #333;
+}
+
+.osmotr__right--title {
+  font-size: 36px;
+  line-height: 20px;
+}
+
+.osmotr__btn-1 {
+  background-color: #FFBD54;
+  margin-right: 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.osmotr__btn-1:hover{
+  background-color: #333;
+}
+
+.osmotr__btn-1:active{
+  background-color: #333;
+  opacity: 0.6;
+}
+
+.osmotr__btn-2 {
+  display: inline-block;
+  margin-top: 20px;
 }
 
 /* FOLLOWING */
@@ -525,7 +556,14 @@ font-size: 14px;
   padding: 15px 50px;
   border: none;
   margin-left: 21px;
+  border-radius: 3px;
 }
+
+.following-btn:hover {
+  background-color: #FFBD54;
+  color: #333;
+}
+
 
       /* CONTACT */
 
@@ -616,6 +654,12 @@ font-size: 14px;
   font-size: 16px;
   padding: 15px 50px;
   border: none;
+  border-radius: 3px;
+}
+
+.contact__btn:active {
+  background-color: #FFBD54;
+  opacity: .6;
 }
 
       /* FOOTER */

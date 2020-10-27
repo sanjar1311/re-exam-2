@@ -179,12 +179,32 @@
 
             <button class="following-btn" type="submit">Подписаться</button>
           </form>
-
-
         </section>
-
-        <!-- CONTACT -->
       </div>
+      <!-- CONTACT -->
+
+      <div class="contact">
+        <div class="contact__left">
+          <a class="map-link" href="https://yandex.ru/maps/?um=constructor%3Ae99f50eaaea5e82da8df4d8de24316e8fe36802770fddbc0887900822ea414c5&source=constructorLink">
+            <img class="map" src="img/map.png" srcset="img/map@2x.png" width="462" height="652" alt="">
+            <img class="contact__vektorcha" src="img/vek.svg" width="42" height="60" alt="">
+          </a>
+        </div>
+        <div class="contact__right">
+          <h3 class="contact__title">Обратная связь</h3>
+          <p class="contact__text">При возникновении вопросов по поводу работы клиники или консультаций, заполните форму ниже:</p>
+          <form class="contact__form" action="https://echo.htmlacdemy.ru" method="POST">
+            <input class="name-input input" type="text" id="name" name="name" aria-label="Ваше имя" placeholder="Ваше имя" required>
+
+            <input class="email-input input" type="email" name="email" aria-label="Email для обратной связи" placeholder="Email для обратной связи" pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" required>
+
+            <textarea class="text-area" name="textarea" minlength="3" placeholder="Опишите Ваш вопрос."  required></textarea>
+
+            <button class="contact__btn" type="submit">Задать нам вопрос</button>
+          </form>
+        </div>
+      </div>
+
     </main>
 
 

@@ -500,6 +500,33 @@ font-size: 14px;
   margin-left: 50px;
 }
 
+/* FOLLOWING */
+
+.following {
+  background-image:  url("../img/follow-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 100px  200px 200px 200px;
+  display: block;
+  margin-bottom: 100px;
+}
+
+.following__title {
+  padding-top: 50px;
+  font-size: 48px;
+  color: #fff;
+}
+
+.following-btn {
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 50px;
+  border: none;
+  margin-left: 21px;
+}
+
       /* FOOTER */
 
 .site-footer {
